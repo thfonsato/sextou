@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
     <script src="https://kit.fontawesome.com/c1cd3c0b1b.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="css/style.css">
+
+    
+    
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
     <title>Sextou</title>
 </head>
 <body>
-  
     <nav role="navigation">
         <div id="menuToggle">
           <input type="checkbox" />
@@ -21,33 +26,58 @@
             <a href="index.html"><li><i class="fas fa-home"></i>&nbsp &nbspTela Inicial</li></a>
             <a href="login.html"><li><li><i class="fas fa-user-plus"></i>&nbsp &nbspConvidar Amigos</li></a>
             <a data-target="#favoritos" data-toggle="modal"><li><i class="fas fa-heart"></i>&nbsp &nbspCurtidos</li></a>
+          
           </ul>
         </div>
+      </nav>
       <button class="btn3" data-toggle="collapse" data-target="#collapse2"> <i class="fa fa-filter" aria-hidden="true"></i></button>
-      <img src="img/logo/logo.jpg" alt="logo" width="120px" height="120px" id="logo2">
-      <button class="btn2" data-toggle="collapse" data-target="#collapse"> <i class="fa fa-map-marker" aria-hidden="true" ></i></button>
-    </nav> 
+     <img src="img/logo/logo.jpg" alt="logo" width="120px" height="120px" id="logo2">
+     <button class="btn2" data-toggle="collapse" data-target="#collapse"> <i class="fa fa-map-marker" aria-hidden="true" ></i></button>
+     
+    
 
-        <div class="collapse" id="collapse" >
-          <div class="card card-body" style="padding: 0rem;">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3704.8127740550267!2d-46.56769148505449!3d-21.787505985592336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c9dce8ca4c10a3%3A0x92fa26a3eb4824eb!2sBar%20New%20York%20Pub!5e0!3m2!1spt-BR!2sbr!4v1592179680677!5m2!1spt-BR!2sbr" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-          </div>
-        </div>  
-        <div class="collapse" id="collapse2" >
-          <div class="card card-body" >
-            <form>
-              <div class="form-group">
-                <label for="customRange2">Faixa de Preço</label>
-                <input type="range" class="custom-range" min="0" max="200" id="customRange2">
+     
+     <div id="principal" >
+      <div class="collapse" id="collapse" >
+        <div class="card card-body" style="padding: 0rem;">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3704.8127740550267!2d-46.56769148505449!3d-21.787505985592336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c9dce8ca4c10a3%3A0x92fa26a3eb4824eb!2sBar%20New%20York%20Pub!5e0!3m2!1spt-BR!2sbr!4v1592179680677!5m2!1spt-BR!2sbr" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>  
+      <div class="collapse" id="collapse2" >
+        <div class="card card-body" >
+          <form>
+       
+            <div class="form-group">
+              <label for="customRange2">Faixa de Preço</label>
+              <input type="range" class="custom-range" min="0" max="200" id="customRange2">
+            </div>
+            
+            <div class="form-row align-items-center">
+              <div class="col-auto my-1">
+                <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preferência</label>
+                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                  <option selected>Escolha...</option>
+                  <option value="1">Bares</option>
+                  <option value="2">Pubs</option>
+                  <option value="3">Baladas</option>
+                </select>
+              </div>
+              <div class="col-auto my-1">
+                <div class="custom-control custom-checkbox mr-sm-2">
+                  <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+                  <label class="custom-control-label" for="customControlAutosizing">Lembrar</label>
+                </div>
               </div>
               <div class="form-row align-items-center">
-                <div class="col-auto my-1">
-                  <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preferência</label>
+                <div class="col-auto my-1 ">
+                  <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Estilo Musical</label>
                   <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
                     <option selected>Escolha...</option>
-                    <option value="1">Bares</option>
-                    <option value="2">Pubs</option>
-                    <option value="3">Baladas</option>
+                    <option value="1">Rock</option>
+                    <option value="2">Sertanejo</option>
+                    <option value="3">Funk</option>
+                    <option value="4">Pagode</option>
+                    <option value="5">Eletrônica</option>
                   </select>
                 </div>
                 <div class="col-auto my-1">
@@ -55,53 +85,45 @@
                     <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
                     <label class="custom-control-label" for="customControlAutosizing">Lembrar</label>
                   </div>
-                </div>
-                <div class="form-row align-items-center">
-                  <div class="col-auto my-1 ">
-                    <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Estilo Musical</label>
-                    <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                      <option selected>Escolha...</option>
-                      <option value="1">Rock</option>
-                      <option value="2">Sertanejo</option>
-                      <option value="3">Funk</option>
-                      <option value="4">Pagode</option>
-                      <option value="5">Eletrônica</option>
-                    </select>
-                  </div>
-                  <div class="col-auto my-1">
-                    <div class="custom-control custom-checkbox mr-sm-2">
-                      <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
-                      <label class="custom-control-label" for="customControlAutosizing">Lembrar</label>
-                    </div>
-                  </div>             
-              </div>
-              </div>
-              <button >Aplicar</button>
-              <button  >Resetar Filtros</button>
-            </form>
-          </div>
-        </div>  
-    <div id="principal" > 
-        <button class="info" data-toggle="modal" data-target="#exampleModal">
-          <img src="img/principal/baladas/0.jpg" alt="evento"  class="evento" width="300px" height="250px" >
-        </button>
-          <p> 
-            <button class="btn" id="like"><i class="far fa-thumbs-up"></i></button> 
-            <button class="btn" id="deslike"><i class="far fa-thumbs-down"></i></button>  
-          </p>
-          <br>
-          <p>  
-            <p>Compartilhe com seus amigos:</p>
-            <button class=btn><i class="fab fa-facebook-square"></i></button>
-            <button class="btn"><i class="fab fa-instagram"></i></button>
-            <button class=btn><i class="fab fa-whatsapp"></i></button>
-            <button class=btn><i class="fa fa-twitter"></i></button>
-          </p>
-          <p><a href="login.html" color="white" ><i class="fa fa-users"></i>&nbsp &nbspSeja Vip</a></p>
-          <p><a href="perfil.html" color="white" ><i class="fa fa-user-circle" ></i>&nbsp &nbspMinha Conta</a></p>
-        <p><a href="cadastre-estabelecimento.html" color="white" ><i class="fa fa-edit" ></i>&nbsp &nbspInscreva Seu Estabelecimento</a></p>
-    </div>
+                </div>             
+            </div>
+            </div>
+            <button >Aplicar</button>
+            <button  >Resetar Filtros</button>
+          </form>
+        </div>
+      </div>  
+       <button class="info" data-toggle="modal" data-target="#exampleModal">
+        <img src="img/principal/baladas/0.jpg" alt="evento"  class="evento" width="300px" height="250px" >
+
+       </button>
+        
+        <p> 
+          <button class="btn" id="like"><i class="far fa-thumbs-up"></i></button> 
+          <button class="btn" id="deslike"><i class="far fa-thumbs-down"></i></button>
+          
+         </p>
+         <br>
+         <p>  
+          <p>Compartilhe com seus amigos:</p>
+           <button class=btn><i class="fab fa-facebook-square"></i></button>
+           <button class="btn"><i class="fab fa-instagram"></i></button>
+           <button class=btn><i class="fab fa-whatsapp"></i></button>
+           <button class=btn><i class="fa fa-twitter"></i></button>
+         </p>
+         
+        
+         <p><a href="login.html" color="white" ><i class="fa fa-users"></i>&nbsp &nbspSeja Vip</a></p>
+         
+        <p><a href="perfil.html" color="white" ><i class="fa fa-user-circle" ></i>&nbsp &nbspMinha Conta</a></p>
+       
+        
+  
+      <p><a href="cadastre-estabelecimento.html" color="white" ><i class="fa fa-edit" ></i>&nbsp &nbspInscreva Seu Estabelecimento</a></p>
     
+      
+ 
+
      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -123,6 +145,7 @@
       </div>
     </div>
 
+
     <div class="modal fade" id="favoritos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -132,10 +155,10 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>  
-         
+          <nav id="favorito"></nav>
         </div>
       </div>
-    </div>  
+    </div>   
 
     <div class="modal fade" id="registro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
@@ -155,9 +178,18 @@
         </div>
       </div>
     </div>  
+
+
+    
+
+  
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
     <script scr="script.js"></script>
+
+  
 </body>
+
 </html>
