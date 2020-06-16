@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c1cd3c0b1b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sextou</title>
+</head>
+<body style = "background-color: black;">
+    <nav role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul id="menu">
+            <a href="index.html"><li><i class="fas fa-home"></i>&nbsp &nbspTela Inicial</li></a>
+            <a data-target="#categorias" data-toggle="modal"><li><i class="fas fa-user-plus"></i>&nbsp &nbspConvidar Amigos</li></a>
+            <a data-target="#favoritos" data-toggle="modal"><li><i class="fas fa-heart"></i>&nbsp &nbspCurtidos</li></a>
+          
+          </ul>
+        </div>
+      </nav>
+      <button class="btn3" data-toggle="collapse" data-target="#collapse"> <i class="fa fa-filter" aria-hidden="true"></i></button>
+     <img src="img/logo/logo.jpg" alt="logo" width="120px" height="120px" id="logo2">
+     <button class="btn2" data-toggle="collapse" data-target="#collapse"> <i class="fa fa-map-marker" aria-hidden="true" ></i></button>
+     <div class="collapse" id="collapse">
+      <div class="card card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+      </div>
+    </div>
+    <div id="login">
+        <form method="post" action=""> 
+          <h1 >Login</h1> 
+          <p> 
+            <label for="nome_login">Seu nome:</label>
+            <input id="nome_login" name="nome_login" required="required" type="text" placeholder="ex. nome"/>
+          </p>
+           
+          <p> 
+            <label for="email_login">Seu e-mail:</label>
+            <input id="email_login" name="email_login" required="required" type="password" placeholder="ex. senha" /> 
+          </p>
+           
+          <p> 
+            <input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
+            <label for="manterlogado">Manter-me logado</label>
+          </p>
+           
+          <p> 
+            <input type="submit" value="Entrar" /> 
+          </p>
+           
+          <p>
+            Ainda não tem conta?
+            <a href="cadastro.html">Cadastre-se</a>
+          </p>
+        </form>
+
+        <p>CONECTE-SE COM</p>
+           <div id="social">
+            <button class="btn"><i class="fab fa-facebook-square"></i></button>
+            <button class="btn"><i class="fab fa-instagram"></i></button>
+            <button class="btn"><i class="fab fa-whatsapp"></i></button>
+            <button class="btn"><i class="fa fa-twitter" ></i></button>
+           </div> 
+    </div>
+</body>
+</html>
